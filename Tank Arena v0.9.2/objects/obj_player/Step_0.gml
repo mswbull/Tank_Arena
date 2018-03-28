@@ -26,24 +26,60 @@ if (l4E78A36C_0)
 	/// @DnDArgument : "op" "3"
 	if(cooldown <= 0)
 	{
-		/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
-		/// @DnDHash : 02C9EC5C
+		/// @DnDHash : 6FEE36ED
 		/// @DnDParent : 7789F44E
-		/// @DnDArgument : "xpos" "x"
-		/// @DnDArgument : "ypos" "y"
-		/// @DnDArgument : "objectid" "obj_bullet"
-		/// @DnDArgument : "layer" ""layer_bullet""
-		/// @DnDSaveInfo : "objectid" "e8f49376-a9f9-4cb3-af22-f8f79a03e93a"
-		instance_create_layer(x, y, "layer_bullet", obj_bullet);
+		/// @DnDArgument : "var" "currentWeapon"
+		if(currentWeapon == 0)
+		{
+			/// @DnDAction : YoYo Games.Instances.Create_Instance
+			/// @DnDVersion : 1
+			/// @DnDHash : 02C9EC5C
+			/// @DnDParent : 6FEE36ED
+			/// @DnDArgument : "xpos" "x"
+			/// @DnDArgument : "ypos" "y"
+			/// @DnDArgument : "objectid" "obj_bullet"
+			/// @DnDArgument : "layer" ""layer_bullet""
+			/// @DnDSaveInfo : "objectid" "e8f49376-a9f9-4cb3-af22-f8f79a03e93a"
+			instance_create_layer(x, y, "layer_bullet", obj_bullet);
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 1A421E9B
+			/// @DnDParent : 6FEE36ED
+			/// @DnDArgument : "expr" "20"
+			/// @DnDArgument : "var" "cooldown"
+			cooldown = 20;
+		}
 	
-		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
-		/// @DnDHash : 1A421E9B
+		/// @DnDHash : 60E09FE9
 		/// @DnDParent : 7789F44E
-		/// @DnDArgument : "expr" "16"
-		/// @DnDArgument : "var" "cooldown"
-		cooldown = 16;
+		/// @DnDArgument : "var" "currentWeapon"
+		/// @DnDArgument : "value" "1"
+		if(currentWeapon == 1)
+		{
+			/// @DnDAction : YoYo Games.Instances.Create_Instance
+			/// @DnDVersion : 1
+			/// @DnDHash : 1001AA2D
+			/// @DnDParent : 60E09FE9
+			/// @DnDArgument : "xpos" "x"
+			/// @DnDArgument : "ypos" "y"
+			/// @DnDArgument : "objectid" "obj_bullet"
+			/// @DnDArgument : "layer" ""layer_bullet""
+			/// @DnDSaveInfo : "objectid" "e8f49376-a9f9-4cb3-af22-f8f79a03e93a"
+			instance_create_layer(x, y, "layer_bullet", obj_bullet);
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 5274420C
+			/// @DnDParent : 60E09FE9
+			/// @DnDArgument : "expr" "20"
+			/// @DnDArgument : "var" "cooldown"
+			cooldown = 20;
+		}
 	}
 
 	/// @DnDAction : YoYo Games.Common.Variable
