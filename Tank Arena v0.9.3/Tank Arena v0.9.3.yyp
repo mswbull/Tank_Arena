@@ -419,25 +419,6 @@
             }
         },
         {
-            "Key": "536f47ea-a536-41d8-9139-1343e7762631",
-            "Value": {
-                "id": "b4b37626-84eb-418b-85d9-d73e22eb46a5",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "rooms\/rm_levelTwo\/rm_levelTwo.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "640ad314-e631-4859-94dc-b0fc63fceedf",
             "Value": {
                 "id": "9a84985c-908d-44a8-934b-671e4df076dc",
@@ -568,6 +549,25 @@
                 ],
                 "resourcePath": "objects\/obj_enemy\/obj_enemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "89fde475-01b2-4ea0-8857-e5ec486f65e7",
+            "Value": {
+                "id": "ad68b308-c490-4a89-a59f-b3168be45499",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/rm_levelTwo\/rm_levelTwo.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
