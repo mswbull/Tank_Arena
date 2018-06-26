@@ -1,4 +1,4 @@
-# Tank Arena v0.9.2
+# Tank Arena v0.9.3
 
 **Application Name:** Tank Arena
 
